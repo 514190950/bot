@@ -1,6 +1,5 @@
 package com.zhonghaiwenda.gitlab.bot.handle.root.handle;
 
-import com.zhonghaiwenda.gitlab.bot.handle.EventHandle;
 import com.zhonghaiwenda.gitlab.bot.handle.RootHandle;
 import com.zhonghaiwenda.gitlab.bot.model.webhook.event.NoteEvent;
 import org.springframework.stereotype.Component;
@@ -11,7 +10,6 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class CommentIssueHandle implements RootHandle<NoteEvent> {
-
 
 
 

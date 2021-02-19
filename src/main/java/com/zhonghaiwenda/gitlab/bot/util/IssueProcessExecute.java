@@ -62,6 +62,12 @@ public class IssueProcessExecute {
         return this;
     }
 
+
+    public IssueProcessExecute close(){
+        data.put("state_event","close");
+        return this;
+    }
+
     public void execute() {
         String uri = API_PREFIX + "/projects/" + projectId + "/issues/" + issuesIid;
         HttpUriRequest request = RequestFactory.put(uri, this.data);
